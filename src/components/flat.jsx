@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Flat extends Component {
   handleClick = (event) => {
     this.props.updateCoords(event.target.dataset);
-    event.target.classList.add('selected');
+    this.props.setActiveFlat(event.target);
   }
 
   render() {
